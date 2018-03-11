@@ -276,6 +276,7 @@
                         <phase>validate</phase>
                         <configuration>
                             <configLocation>checkStyle.xml</configLocation>
+			    <outputFile>${basedir}/target/checkstyle-output.xml</outputFile>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
