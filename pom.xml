@@ -178,6 +178,22 @@
                             <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
                         </configuration>
                     </execution>
+		    <execution>
+      			<id>git submodule update</id>
+      			<phase>initialize</phase>
+      			<configuration>
+       				<executable>git</executable>
+       				<arguments>
+        				<argument>submodule</argument>
+          				<argument>update</argument>
+          				<argument>--init</argument>
+          				<argument>--recursive</argument>
+        			</arguments>
+      			</configuration>
+      			<goals>
+        			<goal>exec</goal>
+      			</goals>
+    		    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -373,4 +389,9 @@
         </profile>
     </profiles>
     
+    <scm>
+        <url>https://github.com/apache/incubator-skywalking</url>
+        <connection>scm:git:https://github.com/apache/incubator-skywalking.git</connection>
+        <developerConnection>scm:git:https://github.com/apache/incubator-skywalking.git</developerConnection>
+    </scm>
 </project>
