@@ -275,7 +275,7 @@
                         <id>validate</id>
                         <phase>validate</phase>
                         <configuration>
-                            <configLocation>checkStyle.xml</configLocation>
+                            <configLocation>${project.basedir}/checkStyle.xml</configLocation>
 			    <outputFile>${basedir}/target/checkstyle-output.xml</outputFile>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
