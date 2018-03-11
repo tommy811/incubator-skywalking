@@ -276,7 +276,7 @@
                         <id>validate</id>
                         <phase>validate</phase>
                         <configuration>
-                            <configLocation>${project.artifactId}/checkStyle.xml</configLocation>
+                            <configLocation>https://github.com/apache/incubator-skywalking/blob/master/checkStyle.xml</configLocation>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
