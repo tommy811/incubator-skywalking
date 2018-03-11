@@ -275,7 +275,7 @@
                         <id>validate</id>
                         <phase>validate</phase>
                         <configuration>
-                            <configLocation>${project.parent.basedir}/checkStyle.xml</configLocation>
+                            <configLocation>incubator-skywalking/checkStyle.xml</configLocation>
 			    <outputFile>${basedir}/target/checkstyle-output.xml</outputFile>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
